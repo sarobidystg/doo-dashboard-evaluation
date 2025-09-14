@@ -27,15 +27,21 @@ export const NAV_DATA = [
         items: [],
       },
       {
-        title: "Forms",
+        title: "User role",
         icon: Icons.Alphabet,
         items: [
           {
-            title: "Form Elements",
-            url: "/forms/form-elements",
+            title: "User Role",
+            url: "/user-role/user-role",
           },
+        ],
+      },
+      {
+        title: "Graph",
+        icon: Icons.Alphabet,
+        items: [
           {
-            title: "Form Layout",
+            title: "Graph Node",
             url: "/forms/form-layout",
           },
         ],
