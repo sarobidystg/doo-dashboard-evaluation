@@ -58,8 +58,9 @@ export function GraphNodeForm() {
   ];
 
   return (
-    <div className="space-y-6">
-      <ShowcaseSection title="Add Graph Node" className="!p-6.5">
+    <ShowcaseSection title="Add New Graph Node" className="!p-6.5">
+      {/* Formulaire */}
+      <div className="mb-8">
         <form action="#">
           <div className="mb-4.5 flex flex-col gap-4.5 xl:flex-row">
             <InputGroup
@@ -103,7 +104,14 @@ export function GraphNodeForm() {
             Save
           </button>
         </form>
+      </div>
 
+      {/* Séparateur */}
+      <div className="mb-6 border-t border-stroke dark:border-dark-3"></div>
+
+      {/* Table */}
+      <div>
+        <h3 className="mb-4 text-lg font-semibold text-dark dark:text-white">Existing Graph Nodes</h3>
         <div className="rounded-[10px] border border-stroke bg-white p-4 shadow-1 dark:border-dark-3 dark:bg-gray-dark dark:shadow-card sm:p-7.5">
           <Table>
             <TableHeader>
@@ -165,8 +173,7 @@ export function GraphNodeForm() {
             </TableBody>
           </Table>
         </div>
-      </ShowcaseSection>
-
-    </div>
+      </div>
+    </ShowcaseSection>
   );
 }

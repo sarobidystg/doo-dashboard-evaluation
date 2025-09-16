@@ -23,8 +23,10 @@ export function UserRoleForm() {
   ];
 
   return (
-    <div className="space-y-6">
-      <ShowcaseSection title="Add User Role" className="!p-6.5">
+    <ShowcaseSection title="Add New User Role" className="!p-6.5">
+      {/* Formulaire */}
+      <div className="mb-8">
+        {/* <h3 className="mb-4 text-lg font-semibold text-dark dark:text-white">Add New User Role</h3> */}
         <form action="#">
           <div className="mb-4.5 flex flex-col gap-4.5 xl:flex-row">
             <Select
@@ -50,7 +52,14 @@ export function UserRoleForm() {
             Save
           </button>
         </form>
+      </div>
 
+      {/* Séparateur */}
+      <div className="mb-6 border-t border-stroke dark:border-dark-3"></div>
+
+      {/* Table */}
+      <div>
+        <h3 className="mb-4 text-lg font-semibold text-dark dark:text-white">Existing User Roles</h3>
         <div className="rounded-[10px] border border-stroke bg-white p-4 shadow-1 dark:border-dark-3 dark:bg-gray-dark dark:shadow-card sm:p-7.5">
           <Table>
             <TableHeader>
@@ -100,8 +109,7 @@ export function UserRoleForm() {
             </TableBody>
           </Table>
         </div>
-      </ShowcaseSection>
-
-    </div>
+      </div>
+    </ShowcaseSection>
   );
 }
