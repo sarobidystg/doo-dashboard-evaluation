@@ -28,7 +28,7 @@ export const NAV_DATA = [
       },
       {
         title: "User role",
-        icon: Icons.Alphabet,
+        icon: Icons.User,
         items: [
           {
             title: "User Role",
@@ -38,7 +38,7 @@ export const NAV_DATA = [
       },
       {
         title: "Graph",
-        icon: Icons.Alphabet,
+        icon: Icons.GraphNode,
         items: [
           {
             title: "Graph Node",
