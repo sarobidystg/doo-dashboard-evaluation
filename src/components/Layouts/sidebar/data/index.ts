@@ -32,7 +32,7 @@ export const NAV_DATA = [
         items: [
           {
             title: "User Role",
-            url: "/user-role/user-role",
+            url: "/forms/user-role",
           },
         ],
       },
@@ -42,7 +42,7 @@ export const NAV_DATA = [
         items: [
           {
             title: "Graph Node",
-            url: "/forms/form-layout",
+            url: "/forms/graph-node",
           },
         ],
       },
