@@ -7,34 +7,28 @@ import {
 } from "@/components/ui/dropdown";
 import { useIsMobile } from "@/dashboard/hooks/use-mobile";
 import { cn } from "@/dashboard/lib/utils";
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { BellIcon } from "./icons";
 
 const notificationList = [
   {
-    image: "/images/user/user-15.png",
     title: "Piter Joined the Team!",
     subTitle: "Congratulate him",
   },
   {
-    image: "/images/user/user-03.png",
     title: "New message",
     subTitle: "Devid sent a new message",
   },
   {
-    image: "/images/user/user-26.png",
     title: "New Payment received",
     subTitle: "Check your earnings",
   },
   {
-    image: "/images/user/user-28.png",
     title: "Jolly completed tasks",
     subTitle: "Assign new task",
   },
   {
-    image: "/images/user/user-27.png",
     title: "Roman Joined the Team!",
     subTitle: "Congratulate him",
   },
@@ -94,14 +88,6 @@ export function Notification() {
                 onClick={() => setIsOpen(false)}
                 className="flex items-center gap-4 rounded-lg px-2 py-1.5 outline-none hover:bg-gray-2 focus-visible:bg-gray-2 dark:hover:bg-dark-3 dark:focus-visible:bg-dark-3"
               >
-                <Image
-                  src={item.image}
-                  className="size-14 rounded-full object-cover"
-                  width={200}
-                  height={200}
-                  alt="User"
-                />
-
                 <div>
                   <strong className="block text-sm font-medium text-dark dark:text-white">
                     {item.title}
