@@ -15,18 +15,6 @@ export const NAV_DATA = [
         ],
       },
       {
-        title: "Calendar",
-        url: "/calendar",
-        icon: Icons.Calendar,
-        items: [],
-      },
-      {
-        title: "Profile",
-        url: "/profile",
-        icon: Icons.User,
-        items: [],
-      },
-      {
         title: "User role",
         icon: Icons.User,
         items: [
