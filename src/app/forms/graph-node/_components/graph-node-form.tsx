@@ -11,6 +11,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import React from "react";
+import { TrashIcon, UpdateIcon } from "@/assets/icons";
 
 export function GraphNodeForm() {
   // Données statiques pour la table des nœuds de graphe
@@ -160,11 +161,13 @@ export function GraphNodeForm() {
 
                   <TableCell className="xl:pr-7.5">
                     <div className="flex items-center justify-end gap-x-3.5">
-                      <button className="hover:text-primary text-sm text-gray-600 hover:text-primary-500">
-                        Edit
+                      <button className="hover:text-primary">
+                        <span className="sr-only">View Node</span>
+                        <UpdateIcon />
                       </button>
-                      <button className="hover:text-primary text-sm text-red-600 hover:text-red-500">
-                        Delete
+                      <button className="hover:text-primary">
+                        <span className="sr-only">Delete Node</span>
+                        <TrashIcon />
                       </button>
                     </div>
                   </TableCell>

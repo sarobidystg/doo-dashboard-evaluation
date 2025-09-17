@@ -11,6 +11,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import React from "react";
+import { TrashIcon, UpdateIcon } from "@/assets/icons";
 
 export function UserRoleForm() {
   // Données statiques pour la table
@@ -26,7 +27,6 @@ export function UserRoleForm() {
     <ShowcaseSection title="Add New User Role" className="!p-6.5">
       {/* Formulaire */}
       <div className="mb-8">
-        {/* <h3 className="mb-4 text-lg font-semibold text-dark dark:text-white">Add New User Role</h3> */}
         <form action="#">
           <div className="mb-4.5 flex flex-col gap-4.5 xl:flex-row">
             <Select
@@ -96,11 +96,13 @@ export function UserRoleForm() {
 
                   <TableCell className="xl:pr-7.5">
                     <div className="flex items-center justify-end gap-x-3.5">
-                      <button className="hover:text-primary text-sm text-gray-600 hover:text-primary-500">
-                        Edit
+                      <button className="hover:text-primary">
+                        <span className="sr-only">View User</span>
+                        <UpdateIcon />
                       </button>
-                      <button className="hover:text-primary text-sm text-red-600 hover:text-red-500">
-                        Delete
+                      <button className="hover:text-primary">
+                        <span className="sr-only">Delete User</span>
+                        <TrashIcon />
                       </button>
                     </div>
                   </TableCell>
