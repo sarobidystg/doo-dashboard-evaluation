@@ -10,7 +10,7 @@ export const NAV_DATA = [
         items: [
           {
             title: "eCommerce",
-            url: "/",
+            url: "/dashboards",
           },
         ],
       },
