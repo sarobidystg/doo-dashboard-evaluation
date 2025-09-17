@@ -1,7 +1,7 @@
 "use client";
 
 import { ChevronUpIcon } from "@/assets/icons";
-import { cn } from "@/lib/utils";
+import { cn } from "@/dashboard/lib/utils";
 import { useId, useState } from "react";
 
 type PropsType = {

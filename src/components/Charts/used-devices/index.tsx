@@ -1,6 +1,6 @@
 import { PeriodPicker } from "@/components/period-picker";
-import { cn } from "@/lib/utils";
-import { getDevicesUsedData } from "@/services/charts.services";
+import { cn } from "@/dashboard/lib/utils";
+import { getDevicesUsedData } from "@/dashboard/services/charts.services";
 import { DonutChart } from "./chart";
 
 type PropsType = {

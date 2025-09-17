@@ -1,8 +1,8 @@
 "use client";
 
-import { useClickOutside } from "@/hooks/use-click-outside";
-import { cn } from "@/lib/utils";
-import { SetStateActionType } from "@/types/set-state-action-type";
+import { useClickOutside } from "@/dashboard/hooks/use-click-outside";
+import { cn } from "@/dashboard/lib/utils";
+import { SetStateActionType } from "@/dashboard/types/set-state-action-type";
 import {
   createContext,
   type PropsWithChildren,

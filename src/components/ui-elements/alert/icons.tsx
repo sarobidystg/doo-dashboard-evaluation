@@ -1,4 +1,4 @@
-import { IconProps } from "@/types/icon-props";
+import { IconProps } from "@/dashboard/types/icon-props";
 
 export function AlertWarningIcon(props: IconProps) {
   return (

@@ -1,5 +1,5 @@
-import "@/css/satoshi.css";
-import "@/css/style.css";
+import "@/dashboard/css/satoshi.css";
+import "@/dashboard/css/style.css";
 
 import { Sidebar } from "@/components/Layouts/sidebar";
 

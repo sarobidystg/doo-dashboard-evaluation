@@ -1,7 +1,7 @@
 import { TrendingUpIcon } from "@/assets/icons";
-import { compactFormat } from "@/lib/format-number";
-import { cn } from "@/lib/utils";
-import { getCampaignVisitorsData } from "@/services/charts.services";
+import { compactFormat } from "@/dashboard/lib/format-number";
+import { cn } from "@/dashboard/lib/utils";
+import { getCampaignVisitorsData } from "@/dashboard/services/charts.services";
 import { CampaignVisitorsChart } from "./chart";
 
 export async function CampaignVisitors({ className }: { className?: string }) {

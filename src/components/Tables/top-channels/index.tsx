@@ -6,8 +6,8 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { compactFormat, standardFormat } from "@/lib/format-number";
-import { cn } from "@/lib/utils";
+import { compactFormat, standardFormat } from "@/dashboard/lib/format-number";
+import { cn } from "@/dashboard/lib/utils";
 import Image from "next/image";
 import { getTopChannels } from "../fetch";
 
